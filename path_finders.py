@@ -1,5 +1,7 @@
 from .tree import Node
 
 class KnightPathFinder:
-    def __init__(self, finder(x, y)):
-        self.finder = (0, 0)
+    def __init__(self, start):
+        self._start = start
+        self._root = root
+    
