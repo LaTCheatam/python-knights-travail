@@ -18,12 +18,12 @@ class Node:
     def add_child(self, node):
         if not node in self._children:
             self._children.append(node)
-            node.parent = self   # = node.parent(self)
+            node.parent = self   # = node.parent(self)   >> we are setting the parent (setter)
 
     def remove_child(self, node):
         if node in self._children:
             self._children.remove(node)   
-            node.parent = None   # = node.parent(None)
+            node.parent = None   # = node.parent(None) becareful do not write node._parent = None we don't want to access another node 
 
     @property
     def parent(self):
