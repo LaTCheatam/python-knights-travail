@@ -6,6 +6,7 @@ class Node:
         self._value = value
         self._parent = None
         self._children = []
+        
 
     @property
     def value(self):
